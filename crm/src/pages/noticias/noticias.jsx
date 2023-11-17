@@ -8,7 +8,7 @@ import Busca from "../../components/busca/busca";
 function Noticias() {
     const [noticias, setNoticias] = useState([]);
     const apiKey = "09606344e84e43fbaaca0127c520f976";
-    const apiUrl = `https://newsapi.org/v2/top-headlines?sources=google-news-br&apiKey=${apiKey}`;
+    const apiUrl = `https://newsapi.org/v2/everything?q=neymar&from=2023-10-17&sortBy=publishedAt&apiKey=33438ce48945472b90c21facc5d1dedb`;
 
     useEffect(() => {
         axios
