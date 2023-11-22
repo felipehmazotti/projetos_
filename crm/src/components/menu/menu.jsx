@@ -18,26 +18,32 @@ function Menu(props){
                 </a>
                 <ul className="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-itens-sm-start" id="menu">
 
-                    <li className="nav-item">
-                        <Link to="/dashboard" className={props.page === "dashboard" ? linkBlue : linkBlack}>
+                <li className="nav-item">
+                        <Link to="/dashboard" className={props.page == "dashboard" ? linkBlue : linkBlack}>
                             <i className="fs-4 bi bi-bar-chart"></i> <span className="ms-1 d-none d-sm-inline">Dashboard</span>
                         </Link>
                     </li>
 
                     <li className="nav-item">
-                        <Link to="/negocios" className={props.page === "negocio" ? linkBlue : linkBlack}>
+                        <Link to="/negocios" className={props.page == "negocio" ? linkBlue : linkBlack}>
                             <i className="=fs-4 bi bi-wallet2"></i> <span className="ms-1 d-none d-sm-inline">Negócios</span>
                         </Link>
                     </li>
 
                     <li className="nav-item">
-                        <Link to="/Noticias" className={props.page === "noticias" ? linkBlue : linkBlack}>
+                        <Link to="/atividades" className={props.page == "atividades" ? linkBlue : linkBlack}>
+                            <i className="=fs-4 bi bi-wallet2"></i> <span className="ms-1 d-none d-sm-inline">Atividades</span>
+                        </Link>
+                    </li>
+
+                    <li className="nav-item">
+                        <Link to="/noticias" className={props.page == "noticias" ? linkBlue : linkBlack}>
                             <i className="=fs-4 bi bi-wallet2"></i> <span className="ms-1 d-none d-sm-inline">Notícias</span>
                         </Link>
                     </li>
 
                     <li className="nav-item">
-                        <Link to="/Previsao" className={props.page === "previsao" ? linkBlue : linkBlack}>
+                        <Link to="/previsao" className={props.page == "previsao" ? linkBlue : linkBlack}>
                             <i className="=fs-4 bi bi-wallet2"></i> <span className="ms-1 d-none d-sm-inline">Previsão</span>
                         </Link>
                     </li>
