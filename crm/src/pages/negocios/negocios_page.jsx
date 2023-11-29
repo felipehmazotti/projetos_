@@ -17,7 +17,7 @@ function Negocio(){
               <div className="bg-white p-4 rounded-4 border">
                     <div className="d-flex justify-content-between mb-3">
                         <div className="d-inline-flex">
-                            <h2>Negocios...</h2>
+                        <h2 style={{ color: 'black' }}>Negocios...</h2>
 
                           <div className="form-control ms-4">
                               <select name="etapa" id="etapa">
