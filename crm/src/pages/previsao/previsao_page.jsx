@@ -28,6 +28,21 @@ const Previsao = () => {
         return <div>Carregando...</div>;
     }
 
+     // Mapeamento de condições meteorológicas
+     const traducaoCondicoes = {
+        clear: "Limpo",
+        clouds: "Nublado",
+        rain: "Chuva",
+        "broken clouds": "Parcialmente nublado",
+        "scattered clouds": "Nuvens dispersas",
+        "few clouds": "Poucas nuvens",
+        "overcast clouds": "Nublado",
+        // Adicione mais traduções conforme necessário
+    };
+
+    // Tradução da condição meteorológica
+    const condicaoTraduzida = traducaoCondicoes[previsao.weather[0].description.toLowerCase()] || previsao.weather[0].description;
+
     let converter = previsao.main.temp-273.15;
     let arredondar = Math.round(converter)
 
@@ -48,7 +63,7 @@ const Previsao = () => {
             <h2>Previsão do Tempo</h2>
             <p>Cidade: {previsao.name}</p>
             <p>Temperatura: {arredondar} °C</p>
-            <p>Condição: {previsao.weather[0].description}</p></div></div></div></div>
+            <p>Condição: {condicaoTraduzida}</p></div></div></div></div>
         </div>
     );
 };
