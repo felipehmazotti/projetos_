@@ -8,7 +8,7 @@ import Menu from "../../components/menu/menu";
 const Previsao = () => {
     // Utilização do estado para armazenar os dados da previsão do tempo
     
-    co
+    
 const [previsao, setPrevisao] = useState(null);
     
     // Chave de API para acessar a OpenWeatherMap

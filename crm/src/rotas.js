@@ -7,6 +7,7 @@ import Noticias from "./pages/noticias/noticias_page.jsx";
 import Previsao from "./pages/previsao/previsao_page.jsx";
 import Negocios from "./pages/negocios/negocios_page.jsx";
 import Atividades from "./pages/atividades/atividade_page.jsx";
+import Tarefas from "./components/tarefas/tarefas.jsx";
 
 // Define a função de componentes que representa as rotas da aplicação
 function Rotas() {
@@ -27,6 +28,8 @@ function Rotas() {
                 <Route path="/negocios" element={<Negocios />} />
                 {/* Define uma rota para a página de atividades */}
                 <Route path="/atividades" element={<Atividades />} />
+                {/* Define uma rota para a página de tarefas */}
+                <Route path="/tarefas" element={<Tarefas />} />
             </Routes>
         </BrowserRouter>
     );
