@@ -8,7 +8,7 @@ import Busca from "../../components/busca/busca";
 function Noticias() {
     const [noticias, setNoticias] = useState([]);
     const apiKey = "33438ce48945472b90c21facc5d1dedb";
-    const apiUrl = `https://newsapi.org/v2/everything?q=palmeiras&from=2023-10-29&sortBy=publishedAt&apiKey=33438ce48945472b90c21facc5d1dedb`;
+    const apiUrl = `https://newsapi.org/v2/everything?q=palmeiras&from=2023-11-01&sortBy=publishedAt&apiKey=33438ce48945472b90c21facc5d1dedb`;
 
     useEffect(() => {
         axios
