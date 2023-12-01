@@ -1,4 +1,5 @@
+/* configuração da logo */
 .img-logo{
-    width: 85px;
-    height: 50px;
+    width: 85px; /*esquerda*/
+    height: 50px; /*direita*/
 }

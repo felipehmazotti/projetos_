@@ -1,3 +1,4 @@
+// função do indicador
 function Indicador(props){
     return <div className="card">
         <div className="card-header">
@@ -10,5 +11,7 @@ function Indicador(props){
     </div>
     
 }
+// fim do indicador
 
+// exportação do indicador
 export default Indicador;
